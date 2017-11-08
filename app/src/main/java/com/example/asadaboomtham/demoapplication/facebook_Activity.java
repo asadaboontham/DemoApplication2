@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -24,11 +21,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.R.attr.author;
+public class facebook_Activity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-
-    private static final String URL_DATA = "http://c7949051.ngrok.io/reddit/test.php";
+    private static final String URL_DATA = "http://c7949051.ngrok.io/reddit/face_feed.php";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;
@@ -36,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_facebook_);
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -71,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                                         o.getString("news_ref"),
                                         o.getString("news_pics")
 
-                                           ////edit
+                                        ////edit
 
                                 );
                                 listItems.add(item);
