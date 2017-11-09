@@ -23,7 +23,7 @@ import java.util.List;
 
 public class facebook_Activity extends AppCompatActivity {
 
-    private static final String URL_DATA = "http://c7949051.ngrok.io/reddit/face_feed.php";
+    private static final String URL_DATA = "http://aba4f54f.ngrok.io/reddit/face_feed.php";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;

@@ -28,7 +28,7 @@ import static android.R.attr.author;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String URL_DATA = "http://c7949051.ngrok.io/reddit/test.php";
+    private static final String URL_DATA = "http://aba4f54f.ngrok.io/reddit/test.php";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadRecyclerViewData() {
         final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("loadingData...");
+        progressDialog.setMessage("กำลังโหลด...");
         progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET,

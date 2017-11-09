@@ -5,7 +5,7 @@ import android.widget.ImageView;
 /**
  * Created by asada boomtham on 27/9/2560.
  */
-
+//Data Object
 public class ListItem {
 
     private String head;
